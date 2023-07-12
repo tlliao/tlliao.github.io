@@ -1,6 +1,0 @@
-@article{ma2021face,
-  title={Face Anonymization by Manipulating Decoupled Identity Representation},
-  author={Ma, Tianxiang and Li, Dongze and Wang, Wei and Dong, Jing},
-  journal={arXiv preprint arXiv:2105.11137},
-  year={2021}
-}
