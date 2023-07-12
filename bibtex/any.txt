@@ -1,8 +1,0 @@
-@inproceedings{ma2019any,
-  title={Any-to-one Face Reenactment Based on Conditional Generative Adversarial Network},
-  author={Ma, Tianxiang and Peng, Bo and Wang, Wei and Dong, Jing},
-  booktitle={2019 Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)},
-  pages={1657--1664},
-  year={2019},
-  organization={IEEE}
-}
