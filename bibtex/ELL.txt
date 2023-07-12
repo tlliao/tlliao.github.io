@@ -1,0 +1,10 @@
+@article{xu2018learning,
+  title={Learning-based natural geometric matching with homography prior},
+  author={Xu, Yifang and Liao, Tianli and Chen, Jing},
+  journal={Electronics Letters},
+  volume={54},
+  number={23},
+  pages={1328--1330},
+  year={2018},
+  publisher={Wiley Online Library}
+}

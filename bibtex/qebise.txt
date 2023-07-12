@@ -1,0 +1,9 @@
+@article{liao2019quality,
+  title={Quality evaluation-based iterative seam estimation for image stitching},
+  author={Liao, Tianli and Chen, Jing and Xu, Yifang},
+  journal={Signal, Image and Video Processing},
+  volume={13},
+  pages={1199--1206},
+  year={2019},
+  publisher={Springer}
+}
