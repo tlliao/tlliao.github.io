@@ -1,0 +1,9 @@
+@article{liao2020single,
+  title={Single-perspective warps in natural image stitching},
+  author={Liao, Tianli and Li, Nan},
+  journal={IEEE transactions on image processing},
+  volume={29},
+  pages={724--735},
+  year={2020},
+  publisher={IEEE}
+}

@@ -1,0 +1,6 @@
+@article{liao2024parallax,
+  title={Parallax-tolerant Image Stitching via Segmentation-guided Multi-homography Warping},
+  author={Liao, Tianli and Wang, Ce and Li, Lei and Liu, Guangen and Li, Nan},
+  journal={arXiv preprint arXiv:2406.19922},
+  year={2024}
+}

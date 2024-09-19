@@ -1,0 +1,6 @@
+@article{liao2022natural,
+  title={Natural image stitching using depth maps},
+  author={Liao, Tianli and Li, Nan},
+  journal={arXiv preprint arXiv:2202.06276},
+  year={2022}
+}
