@@ -1,0 +1,6 @@
+@inproceedings{liao2025leveraging,
+  title={Leveraging Local Patch Alignment to Seam Cutting for Large Parallax Image Stitching},
+  author={Liao, Tianli and Zhao, Chenyang and Li, Lei and Cao, Heling},
+  booktitle = {IEEE International Conference on Computer Vision (ICCV)},
+  year={2025}
+}
