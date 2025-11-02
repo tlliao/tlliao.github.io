@@ -1,0 +1,6 @@
+@article{zhao2025dyglnet,
+  title={DyGLNet: Hybrid Global-Local Feature Fusion with Dynamic Upsampling for Medical Image Segmentation},
+  author={Zhao, Yican and Wang, Ce and Hao, You and Li, Lei and Liao, Tianli},
+  journal={arXiv preprint arXiv:2509.12763},
+  year={2025}
+}
