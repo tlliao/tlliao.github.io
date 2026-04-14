@@ -129,3 +129,51 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.bibtex-panel {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px solid #d9e5f2;
+  border-radius: 8px;
+  background-color: #f8fbff;
+}
+
+.bibtex-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.bibtex-status {
+  font-size: 13px;
+  color: #4f6b85;
+  min-height: 16px;
+}
+
+.bibtex-copy-btn {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1;
+  color: #155ca8;
+  background-color: #e9f2fc;
+  border: 1px solid #c2d8f0;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.bibtex-copy-btn:hover {
+  color: #f09228;
+  border-color: #f2be88;
+  background-color: #fff5eb;
+}
+
+.bibtex-content {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  line-height: 1.45;
+}

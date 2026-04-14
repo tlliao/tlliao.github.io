@@ -1,8 +1,0 @@
-@article{liao2026object-ir,
-title = {Object-IR: Leveraging object consistency and mesh deformation for self-supervised image retargeting},
-author = {Tianli Liao and Ran Wang and Siqing Zhang and Lei Li and Guangen Liu and Chenyang Zhao and Heling Cao and Peng Li},
-journal = {Pattern Recognition},
-volume = {172},
-pages = {112651},
-year = {2026},
-}

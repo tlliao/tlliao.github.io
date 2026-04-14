@@ -48,10 +48,48 @@
               </td>
             </tr>
           </tbody></table>
+
+          <!--
+            ==================== Maintainer Guide ====================
+            when adding a new paper, modify the following two items：
+            1) copy a paper block between "Paper List Start" and "Paper List End", writing:
+               - paper id (data-bib)
+               - title, authors, conf/journal, year
+               - links: code / paper / arXiv (optional)
+               - abstract
+            2) in the bottom script "BibTeX Registry", adding new bib id.
+               - data-bib must consistent with key in bibEntries. 
+
+            Paper Block Template (copy and fill):
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="assets/your-image.png" width="180">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://paper-link">
+                  <papertitle>Your Paper Title</papertitle>
+                </a>
+                <br>
+                Author A, <strong>Your Name</strong>, Author C
+                <br>
+                <em>Venue Name</em>, 20XX
+                <br>
+                <a href="https://code-link">code</a>
+                /
+                <a href="https://paper-link">paper</a>
+                /
+                <a href="#" class="bibtex-toggle" data-bib="your_paper_id">bibtex</a>
+                <p></p>
+                <p>Your one-sentence summary.</p>
+              </td>
+            </tr>
+            ==========================================================
+          -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <!-- Paper List Start -->
 
 
-              <!---DyGLNet-->
+              <!-- Paper: dyglnet -->
               <tr>
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <img src='assets/DyGLNet.png' width="160">
@@ -72,9 +110,11 @@
                   <br>
                   <a href="https://github.com/YeeCan-Zhao/DyGLNet">code</a>
                   /
+                  <a href="https://doi.org/10.1016/j.patcog.2025.112792">paper</a>
+                  /
                   <a href="https://arxiv.org/abs/2509.12763">arXiv</a>
                   /
-                  <a href="data/DyGLNet.txt">bibtex</a>
+                  <a href="#" class="bibtex-toggle" data-bib="dyglnet">bibtex</a>
                   <p></p>
                   <p>
                     A lightweight and high-performance network designed for medical image segmentation, addressing key challenges like multi-scale lesions, blurred boundaries, and high computational demands.                   
@@ -83,7 +123,7 @@
               </tr>
 
 
-              <!---Object-IR-->
+              <!-- Paper: object_ir -->
               <tr>
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <img src='assets/Object-IR.png' width="180">
@@ -108,9 +148,11 @@
                   <br>
                   <a href="https://github.com/tlliao/Object-IR">code</a>
                   /
+                  <a href="https://doi.org/10.1016/j.patcog.2025.112651">paper</a>
+                  /
                   <a href="https://arxiv.org/abs/2510.27236">arXiv</a>
                   /
-                  <a href="data/Object-IR.txt">bibtex</a>
+                  <a href="#" class="bibtex-toggle" data-bib="object_ir">bibtex</a>
                   <p></p>
                   <p>
                     A self-supervised image retargeting method that leverages object consistency and mesh deformation to achieve better retargeting results. (<strong>P.S.</strong> The equation (6) in the journal version has a typo. Please refer to the arXiv version for the correct one.)
@@ -118,7 +160,7 @@
                 </td>
               </tr>
 
-            <!---NISuDM-->
+            <!-- Paper: nisudm -->
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <img src='assets/NISuDM.png' width="180">
@@ -136,9 +178,11 @@
                 <br>
                 <a href="https://github.com/tlliao/NIS_depths">code</a>
                 /
+                <a href="https://doi.org/10.1016/j.image.2025.117438">paper</a>
+                /
                 <a href="https://arxiv.org/abs/2202.06276">arXiv</a>
                 /
-                <a href="data/NISuDM.txt">bibtex</a>
+                <a href="#" class="bibtex-toggle" data-bib="nisudm">bibtex</a>
                 <p></p>
                 <p>
                   Using (ground truth or estimated) depth maps to construct epipolar geometry between large parallax images to achieve better image alignment and warping results.
@@ -146,7 +190,7 @@
               </td>
             </tr>
 
-              <!---LPAM--->
+            <!-- Paper: lpam -->
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <img src='assets/LPAM.png' width="180">
@@ -166,7 +210,9 @@
                 <br>
                 <a href="https://github.com/tlliao/LPAM_seam-cutting">code</a>
                 /
-                <a href="data/LPAM-seam-cutting.txt">bibtex</a>
+                <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Liao_Leveraging_Local_Patch_Alignment_to_Seam-cutting_for_Large_Parallax_Image_ICCV_2025_paper.html">paper</a>
+                /
+                <a href="#" class="bibtex-toggle" data-bib="lpam">bibtex</a>
                 <p></p>
                 <p>
                   Local Patch Alignment Module (LPAM) is proposed to improve the performance of seam-cutting methods for large parallax image stitching.
@@ -176,7 +222,7 @@
             
 
 
-              <!---MHW-->
+              <!-- Paper: multi_homo_warp -->
               <tr>
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <img src='assets/multi-homo-warp.png' width="180">
@@ -197,9 +243,11 @@
                   <br>
                   <a href="https://github.com/tlliao/multi-homo-warp">code</a>
                   /
+                  <a href="https://doi.org/10.1016/j.sigpro.2024.109860">paper</a>
+                  /
                   <a href="https://arxiv.org/abs/2406.19922">arXiv</a>
                   /
-                  <a href="data/multi-homo-warp.txt">bibtex</a>
+                  <a href="#" class="bibtex-toggle" data-bib="multi_homo_warp">bibtex</a>
                   <p></p>
                   <p>
                     Leveraging SAM (Segment Anything Model) into multiple image warping algorithm for large parallax image stitching.
@@ -207,7 +255,7 @@
                 </td>
               </tr>
                        
-             <!---SPW-->
+            <!-- Paper: spw -->
              <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <img src='assets/spw.jpg' width="180">
@@ -225,9 +273,11 @@
                 <br>
                 <a href="https://github.com/tlliao/Single-perspective-warps">code</a>
                 /
+                <a href="https://ieeexplore.ieee.org/abstract/document/8802274">paper</a>
+                /
                 <a href="https://arxiv.org/abs/1802.04645">arXiv</a>
                 /
-                <a href="data/SPW.txt">bibtex</a>
+                <a href="#" class="bibtex-toggle" data-bib="spw">bibtex</a>
                 <p></p>
                 <p>
                   We propose two single-perspective warps for natural image stitching. The first one is a parametric warp, the second one is a mesh-based warp.
@@ -236,7 +286,7 @@
             </tr>
 
 
-            <!---qebise-->
+            <!-- Paper: qebise -->
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <img src='assets/qebise.jpg' width="180">
@@ -254,7 +304,9 @@
                 <br>
                 <a href="https://github.com/tlliao/Iterative-seam-estimation">code</a>
                 /
-                <a href="data/qebise.txt">bibtex</a>
+                <a href="https://link.springer.com/article/10.1007/s11760-019-01466-9">paper</a>
+                /
+                <a href="#" class="bibtex-toggle" data-bib="qebise">bibtex</a>
                 <p></p>
                 <p>
                     We proposed a novel iterative seam estimation method where the iteration procedure is guided by our quality evaluation for the pixels along the seam.
@@ -263,7 +315,7 @@
             </tr>
 
 
-            <!---ELL-->
+            <!-- Paper: ell -->
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <img src='assets/ell.png' width="180">
@@ -280,7 +332,9 @@
                 <br>
                 <em>Electronics Letters (<strong>ELL</strong>)</em>, 2018
                 <br>
-                <a href="data/ELL.txt">bibtex</a>
+                <a href="https://digital-library.theiet.org/content/journals/10.1049/el.2018.6478">paper</a>
+                /
+                <a href="#" class="bibtex-toggle" data-bib="ell">bibtex</a>
                 <p></p>
                 <p>
                 A novel homography geometric matching architecture with homography prior is proposed.
@@ -288,7 +342,7 @@
               </td>
             </tr>
 
-            <!---PBSC-->
+            <!-- Paper: pbsc -->
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <img src='assets/pbsc.jpg' width="180">
@@ -307,13 +361,16 @@
                 <br>
                 <a href="https://github.com/tlliao/Perception-based-seam-cutting">code</a>
                 /
-                <a href="data/pbsc.txt">bibtex</a>
+                <a href="https://link.springer.com/article/10.1007/s11760-018-1241-9">paper</a>
+                /
+                <a href="#" class="bibtex-toggle" data-bib="pbsc">bibtex</a>
                 <p></p>
                 <p>
                 A perception-based energy function is designed for seam-cutting method, in which the nonlinearity and the nonuniformity of human perception is considered.
                 </p>
               </td>
             </tr>
+            <!-- Paper List End -->
 
 
        
@@ -380,6 +437,231 @@
       </table>
     
     
+    <script>
+      (function () {
+        /*
+          ==================== BibTeX Registry ====================
+          rules:
+          1) key must consistent with data-bib
+          2) value is the BibTeX text
+
+          template：
+          your_paper_id: `@article{key2026title,
+            title={...},
+            author={...},
+            journal={...},
+            year={2026}
+          }`,
+          ==========================================================
+        */
+        const bibEntries = {
+          dyglnet: `@article{zhao2026dyglnet,
+  title={DyGLNet: Hybrid global-local feature fusion with dynamic upsampling for medical image segmentation},
+  author={Zhao, Yican and Wang, Ce and Hao, You and Li, Lei and Liao, Tianli},
+  journal={Pattern Recognition},
+  pages={112792},
+  year={2026},
+  publisher={Elsevier}
+}`,
+          object_ir: `@article{liao2026object-ir,
+title = {Object-IR: Leveraging object consistency and mesh deformation for self-supervised image retargeting},
+author = {Tianli Liao and Ran Wang and Siqing Zhang and Lei Li and Guangen Liu and Chenyang Zhao and Heling Cao and Peng Li},
+journal = {Pattern Recognition},
+volume = {172},
+pages = {112651},
+year = {2026},
+}`,
+          nisudm: `@article{liao2025natural,
+  title={Natural image stitching using depth maps},
+  author={Liao, Tianli and Li, Nan},
+  journal={Signal Processing: Image Communication},
+  pages={117438},
+  year={2025},
+  publisher={Elsevier}
+}`,
+          lpam: `@InProceedings{Liao_2025_ICCV,
+    author    = {Liao, Tianli and Zhao, Chenyang and Li, Lei and Cao, Heling},
+    title     = {Leveraging Local Patch Alignment to Seam-cutting for Large Parallax Image Stitching},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {27262-27271}
+}`,
+          multi_homo_warp: `@article{Liao2025Parallax,
+title = {Parallax-tolerant image stitching via segmentation-guided multi-homography warping},
+author = {Tianli Liao and Ce Wang and Lei Li and Guangen Liu and Nan Li},
+journal = {Signal Processing},
+volume = {230},
+pages = {109860},
+year = {2025},
+}`,
+          spw: `@article{liao2020single,
+  title={Single-perspective warps in natural image stitching},
+  author={Liao, Tianli and Li, Nan},
+  journal={IEEE transactions on image processing},
+  volume={29},
+  pages={724--735},
+  year={2020},
+  publisher={IEEE}
+}`,
+          qebise: `@article{liao2019quality,
+  title={Quality evaluation-based iterative seam estimation for image stitching},
+  author={Liao, Tianli and Chen, Jing and Xu, Yifang},
+  journal={Signal, Image and Video Processing},
+  volume={13},
+  pages={1199--1206},
+  year={2019},
+  publisher={Springer}
+}`,
+          ell: `@article{xu2018learning,
+  title={Learning-based natural geometric matching with homography prior},
+  author={Xu, Yifang and Liao, Tianli and Chen, Jing},
+  journal={Electronics Letters},
+  volume={54},
+  number={23},
+  pages={1328--1330},
+  year={2018},
+  publisher={Wiley Online Library}
+}`,
+          pbsc: `@article{li2018perception,
+  title={Perception-based seam cutting for image stitching},
+  author={Li, Nan and Liao, Tianli and Wang, Chao},
+  journal={Signal, Image and Video Processing},
+  volume={12},
+  pages={967--974},
+  year={2018},
+  publisher={Springer}
+}`
+        };
+
+        function loadBibText(bibId) {
+          const bibText = bibEntries[bibId];
+          if (!bibText) {
+            throw new Error('BibTeX entry not found: ' + bibId);
+          }
+          return bibText.trim();
+        }
+
+        async function copyText(text) {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            return;
+          }
+
+          const textArea = document.createElement('textarea');
+          textArea.value = text;
+          textArea.style.position = 'fixed';
+          textArea.style.opacity = '0';
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+        }
+
+        function buildBibPanel(bibId) {
+          const panel = document.createElement('div');
+          panel.className = 'bibtex-panel';
+          panel.dataset.bib = bibId;
+          panel.hidden = true;
+
+          const toolbar = document.createElement('div');
+          toolbar.className = 'bibtex-toolbar';
+
+          const status = document.createElement('span');
+          status.className = 'bibtex-status';
+
+          const copyButton = document.createElement('button');
+          copyButton.type = 'button';
+          copyButton.className = 'bibtex-copy-btn';
+          copyButton.textContent = 'copy';
+
+          const content = document.createElement('pre');
+          content.className = 'bibtex-content';
+
+          toolbar.appendChild(status);
+          toolbar.appendChild(copyButton);
+          panel.appendChild(toolbar);
+          panel.appendChild(content);
+
+          copyButton.addEventListener('click', async function () {
+            const text = content.textContent || '';
+            if (!text || text === 'Failed to load BibTeX.') {
+              return;
+            }
+
+            try {
+              await copyText(text);
+              status.textContent = 'Copied';
+            } catch (error) {
+              status.textContent = 'Copy failed';
+            }
+
+            window.setTimeout(function () {
+              status.textContent = '';
+            }, 1400);
+          });
+
+          return panel;
+        }
+
+        function onBibToggleClick(event) {
+          event.preventDefault();
+
+          const trigger = event.currentTarget;
+          const bibId = trigger.dataset.bib;
+          if (!bibId) {
+            return;
+          }
+
+          let panel = trigger.parentElement.querySelector('.bibtex-panel[data-bib="' + bibId + '"]');
+          if (!panel) {
+            panel = buildBibPanel(bibId);
+            trigger.insertAdjacentElement('afterend', panel);
+          }
+
+          const isOpening = panel.hidden;
+
+          document.querySelectorAll('.bibtex-panel').forEach(function (item) {
+            if (item !== panel) {
+              item.hidden = true;
+            }
+          });
+          document.querySelectorAll('.bibtex-toggle').forEach(function (item) {
+            if (item !== trigger) {
+              item.setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          if (!isOpening) {
+            panel.hidden = true;
+            trigger.setAttribute('aria-expanded', 'false');
+            return;
+          }
+
+          panel.hidden = false;
+          trigger.setAttribute('aria-expanded', 'true');
+
+          const content = panel.querySelector('.bibtex-content');
+          if (content.dataset.loaded === 'true') {
+            return;
+          }
+
+          try {
+            content.textContent = loadBibText(bibId);
+            content.dataset.loaded = 'true';
+          } catch (error) {
+            content.textContent = 'Failed to load BibTeX.';
+          }
+        }
+
+        document.querySelectorAll('.bibtex-toggle').forEach(function (link) {
+          link.setAttribute('role', 'button');
+          link.setAttribute('aria-expanded', 'false');
+          link.addEventListener('click', onBibToggleClick);
+        });
+      })();
+    </script>
     </body>
     
     </html>    
