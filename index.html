@@ -86,6 +86,35 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <!-- Paper List Start -->
 
+              <!-- Paper: TriConDepth -->
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <img src='assets/xxx.png' width="160">
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://doi.org/10.1016/j.patcog.2026.114984">
+                    <papertitle>Leveraging unlabeled data via semi-supervised contrastive learning for enhanced monocular depth estimation
+                    </papertitle>
+                  </a>
+                  <br>
+                  Yuhua Zhong,
+                  You Hao,
+                  Xiaofeng Wu,
+                  <strong>Tianli Liao</strong>,
+                  <a href="https://scholar.google.com.hk/citations?user=IBZRx3AAAAAJ">Ce Wang*</a>
+                  <br>
+                  <em>Pattern Recognition (<strong>PR</strong>)</em>, 2026
+                  <br>
+                  <a href="https://github.com/Ketin12138/TriConDepth">code</a>
+                  /
+                  <a href="#" class="bibtex-toggle" data-bib="TriConDepth">bibtex</a>
+                  <p></p>
+                  <p>
+                    We integrate contrastive learning into semi-supervised MDE.                   
+                  </p>
+                </td>
+              </tr>
+
 
               <!-- Paper: dyglnet -->
               <tr>
@@ -168,7 +197,7 @@
                 <strong>Tianli Liao</strong>,
                 <a href="https://scholar.google.com.hk/citations?user=X5v4WBEAAAAJ">Nan Li*</a>
                 <br>
-                <em>Signal Processing: Image Communication (<strong>Image</strong>)</em>, 2025
+                <em>Signal Processing: Image Communication (<strong>Image</strong>)</em>, 2026
                 <br>
                 <a href="https://github.com/tlliao/NIS_depths">code</a>
                 /
@@ -435,6 +464,15 @@
           ==========================================================
         */
         const bibEntries = {
+          TriConDepth: `@article{Zhong2026tricondepth,
+      title = {Leveraging unlabeled data via semi-supervised contrastive learning for enhanced monocular depth estimation},
+      journal = {Pattern Recognition},
+      pages = {114984},
+      year = {2026},
+      issn = {0031-3203},
+      doi = {https://doi.org/10.1016/j.patcog.2026.114984},
+      author = {Yuhua Zhong and You Hao and Xiaofeng Wu and Tianli Liao and Ce Wang},
+      }`,
           dyglnet: `@article{zhao2026dyglnet,
   title={DyGLNet: Hybrid global-local feature fusion with dynamic upsampling for medical image segmentation},
   author={Zhao, Yican and Wang, Ce and Hao, You and Li, Lei and Liao, Tianli},
@@ -451,12 +489,13 @@ volume = {172},
 pages = {112651},
 year = {2026},
 }`,
-          nisudm: `@article{liao2025natural,
+          nisudm: `@article{liao2026natural,
   title={Natural image stitching using depth maps},
   author={Liao, Tianli and Li, Nan},
   journal={Signal Processing: Image Communication},
   pages={117438},
-  year={2025},
+  volume={141},
+  year={2026},
   publisher={Elsevier}
 }`,
           lpam: `@InProceedings{Liao_2025_ICCV,
