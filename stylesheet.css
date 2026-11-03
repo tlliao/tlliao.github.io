@@ -177,3 +177,72 @@ span.highlight {
   font-size: 13px;
   line-height: 1.45;
 }
+
+/* Homepage sections and publication filters */
+:root {
+  --accent: #1772d0;
+  --muted: #68788a;
+  --line: #e4ebf2;
+}
+
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: #222c38; background: #fff; line-height: 1.55; }
+h2 { margin: 0 0 18px; font-size: 22px; font-weight: 400; color: #202b37; }
+.content-section { margin: 16px 20px 28px; padding-top: 22px; border-top: 1px solid var(--line); }
+.news-list, .talks-list { list-style: none; margin: 0; padding: 0; }
+.news-list li, .talks-list li { display: grid; grid-template-columns: 82px minmax(0, 1fr); gap: 16px; margin: 0 0 14px; }
+.news-list time, .talks-list time { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; padding-top: 2px; }
+.section-note { color: var(--muted); margin: 0; font-size: 15px; }
+.talk-host { display: block; color: var(--muted); font-size: 14px; margin-top: 3px; }
+.service-list { padding-left: 20px; margin: 0; }
+.publications-section { margin-bottom: 0; }
+.publication-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-button { display: inline-flex; align-items: center; gap: 7px; padding: 8px 12px; border: 1px solid #d7e2ee; border-radius: 6px; color: #43546a; background: #fff; font: inherit; font-size: 13px; line-height: 1.4; cursor: pointer; transition: background-color .15s, border-color .15s; }
+.filter-button:hover { background: #f3f7fc; border-color: #97bde5; }
+.filter-button[aria-pressed="true"] { color: #fff; background: var(--accent); border-color: var(--accent); }
+.filter-count { display: inline-block; padding: 0 5px; border-radius: 3px; font-size: 11px; background: #edf2f8; color: #52667d; }
+.filter-button[aria-pressed="true"] .filter-count { background: #ffffff29; color: #fff; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.publication-status { margin: 12px 0 4px; color: var(--muted); font-size: 13px; }
+.publication { scroll-margin-top: 20px; }
+.publication > td { border-bottom: 1px solid #f0f3f7; }
+.publication:last-child > td { border-bottom: 0; }
+.publication img { max-width: 180px; height: auto; display: block; }
+.publication:target > td { background: #f4f8fd; }
+
+@media (max-width: 600px) {
+  .bio-row { display: flex; flex-direction: column-reverse; }
+  .bio-row > td { display: block; width: auto !important; max-width: none !important; padding: 16px 20px !important; }
+  .bio-row > td:last-child { align-self: center; padding-bottom: 0 !important; }
+  .bio-row img { width: 150px; }
+  .content-section { margin-left: 20px; margin-right: 20px; }
+  .filter-button { font-size: 12px; padding: 8px 10px; }
+  .publication-list, .publication-list > tbody { display: block; }
+  .publication { display: block; padding: 20px; border-bottom: 1px solid var(--line); }
+  .publication > td { display: block; width: auto !important; padding: 0 !important; border: 0; }
+  .publication > td:first-child { margin-bottom: 12px; }
+  .publication img { max-width: 100%; max-height: 160px; width: auto; }
+  .news-list li, .talks-list li { grid-template-columns: 64px minmax(0, 1fr); gap: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .filter-button { transition: none; }
+}
+
+/* The original AdaML image is unavailable; replace this card when supplied. */
+.paper-preview-placeholder { box-sizing: border-box; width: 160px; min-height: 110px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; padding: 16px; border: 1px solid var(--line); border-radius: 6px; background: #f6f9fc; color: #42617f; text-align: center; font-size: 18px; }
+.paper-preview-placeholder span { font-size: 12px; line-height: 1.5; color: var(--muted); }
+
+
+/* Native fragment links keep all navigation in this document. */
+.page-navigation { margin: 0 20px; padding: 20px 0 14px; border-bottom: 1px solid var(--line); }
+.page-navigation ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; list-style: none; margin: 0; padding: 0; }
+.page-navigation a { display: inline-block; padding: 4px 0; font-size: 14px; }
+#about, .content-section { scroll-margin-top: 20px; }
+.page-bottom { margin: 0 20px; padding: 0 0 28px; text-align: center; }
+.back-to-top { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; }
+@media (max-width: 600px) {
+  .page-navigation ul { gap: 4px 18px; }
+}
