@@ -8,10 +8,6 @@
 window.homepageData = {
   categories: [
   {
-    "id": "full",
-    "label": "Full"
-  },
-  {
     "id": "image",
     "label": "Image Stitching / Editing"
   },
@@ -22,9 +18,17 @@ window.homepageData = {
   {
     "id": "medical",
     "label": "Medical Image Analysis"
+  },
+  {
+    "id": "preprints",
+    "label": "Preprints"
   }
 ],
   publicationCategories: {
+  "s2mer": ["preprints"],
+  "hybrid_ir": ["preprints"],
+  "geometry_first": ["preprints"],
+
   "AdaML": [
     "medical"
   ],
@@ -83,6 +87,25 @@ window.homepageData = {
     }
   ],
   bibEntries: {
+      s2mer: `@unpublished{liao2026s2mer,
+          title = {S2MeR: Self-Supervised Mesh-Based Video Retargeting via Temporal and Geometric Consistency},
+          author = {Tianli Liao and Ran Wang and Siqing Zhang and Guangen Liu and Lei Li and Ce Wang},
+          year = {2026},
+          note = {Submitted}
+          }`,
+      hybrid_ir: `@unpublished{liao2026hybridir,
+          title = {Hybrid-IR: Structure-Preserving Image Retargeting via Hybrid Mesh and Dense Residual Warping},
+          author = {Tianli Liao and Siqing Zhang and Ran Wang and Wenjing Li},
+          year = {2026},
+          note = {Submitted}
+          }`,
+      geometry_first: `@unpublished{liao2026geometryfirst,
+          title = {Geometry First, Pixels Last: 3D-Guided Image Stitching under Large Parallax},
+          author = {Tianli Liao and Siqing Zhang and Ce Wang},
+          year = {2026},
+          note = {Submitted}
+          }`,
+
       AdaML: `@article{Li2026AdaML,
           title = {AdaML: Adaptive meta-learning for generalizable sparse-view CT reconstruction},
           journal = {Computerized Medical Imaging and Graphics},

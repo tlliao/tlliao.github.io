@@ -246,3 +246,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 @media (max-width: 600px) {
   .page-navigation ul { gap: 4px 18px; }
 }
+
+/* Submitted manuscripts use a text layout until figures are available. */
+.preprint-content { padding: 20px; vertical-align: middle; }
+.submission-status { display: inline-block; color: var(--muted); font-size: 14px; font-style: italic; }

@@ -8,7 +8,10 @@
   const buttons = [];
 
   function matches(row, category) {
-    return category === 'full' || (data.publicationCategories[row.dataset.paper] || []).includes(category);
+    const categories = data.publicationCategories[row.dataset.paper] || [];
+    // Submitted manuscripts are shown exclusively under Preprints.
+    if (categories.includes('preprints')) return category === 'preprints';
+    return categories.includes(category);
   }
 
   function selectCategory(category) {
@@ -25,7 +28,7 @@
       button.setAttribute('aria-pressed', String(button.dataset.category === category));
     });
     const label = data.categories.find(function (item) { return item.id === category; }).label;
-    status.textContent = category === 'full' ? 'Showing all ' + count + ' publications' : label + ' · ' + count + (count === 1 ? ' publication' : ' publications');
+    status.textContent = label + ' · ' + count + (count === 1 ? ' publication' : ' publications');
   }
 
   data.categories.forEach(function (category) {
@@ -45,7 +48,7 @@
     filters.appendChild(button);
   });
   filters.hidden = false;
-  selectCategory('full');
+  selectCategory(data.categories[0].id);
 
   document.getElementById('news-empty').hidden = data.news.length > 0;
   data.news.forEach(function (entry) {
@@ -67,17 +70,26 @@
     document.getElementById('news-list').appendChild(item);
   });
 
-  // News links reveal the referenced paper even when another filter is active.
+  // News links reveal the referenced paper under its research category.
+  function showPaperCategory(row) {
+    if (!row.hidden) return;
+    const category = data.categories.find(function (item) { return matches(row, item.id); });
+    if (category) selectCategory(category.id);
+  }
+
   function revealLinkedPaper() {
     const row = rows.find(function (item) { return '#' + item.id === window.location.hash; });
     if (row) {
-      if (row.hidden) selectCategory('full');
+      showPaperCategory(row);
       row.scrollIntoView({ block: 'start' });
     }
   }
   window.addEventListener('hashchange', revealLinkedPaper);
   document.getElementById('news-list').addEventListener('click', function (event) {
-    if (event.target.closest('a[href^="#paper-"]')) selectCategory('full');
+    const anchor = event.target.closest('a[href^="#paper-"]');
+    if (!anchor) return;
+    const row = rows.find(function (item) { return '#' + item.id === anchor.getAttribute('href'); });
+    if (row) showPaperCategory(row);
   });
   if (window.location.hash) revealLinkedPaper();
 
